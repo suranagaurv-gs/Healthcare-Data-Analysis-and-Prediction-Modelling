@@ -40,7 +40,7 @@ project/
 ├── models/
 │   ├── model.pkl
 │   ├── columns.pkl
-│   └── preprocessor.pkl
+│   
 │
 ├── app/
 │   └── app.py
@@ -166,12 +166,12 @@ The trained model and preprocessing pipeline were saved using:
 
 1. Clone the repository:
    ```
-   git clone 
+   git clone https://github.com/suranagaurv-gs/Healthcare-Data-Analysis-and-Prediction-Modelling.git 
    ```
 
 2. Navigate to the project folder:
    ```
-   cd project
+   cd C:\healthcare prediction and predictive modelling project DS (naviotech solutions)\Healthcare data analysis and stroke prediction (github)
    ```
 
 3. Install dependencies:
