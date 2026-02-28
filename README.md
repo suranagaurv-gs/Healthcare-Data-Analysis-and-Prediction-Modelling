@@ -171,7 +171,7 @@ The trained model and preprocessing pipeline were saved using:
 
 2. Navigate to the project folder:
    ```
-   cd C:\healthcare prediction and predictive modelling project DS (naviotech solutions)\Healthcare data analysis and stroke prediction (github)
+   cd C:\CAirline-Ticket-Price-Prediction (github)\Healthcare data analysis and stroke prediction (github)
    ```
 
 3. Install dependencies:
