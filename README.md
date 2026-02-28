@@ -24,13 +24,14 @@ The final output includes a trained machine learning model integrated into a Str
 
 ---
 
-#  Project Structure
+##  Project Structure
 
+```
 project/
 │
 ├── notebooks/
-│   ├── Comprehensive EDA and Data Preparation for Healthcare Data (Stroke Prediction).ipynb
-│   └── Predictive Model Building and Evaluation (Stroke Prediction).ipynb
+│   ├── comprehensive_eda_stroke.ipynb
+│   └── model_building_stroke.ipynb
 │
 ├── data/
 │   ├── original/
@@ -38,18 +39,19 @@ project/
 │
 ├── models/
 │   ├── model.pkl
-│   └── columns.pkl
+│   ├── columns.pkl
+│   └── preprocessor.pkl
 │
 ├── app/
 │   └── app.py
 │
 ├── requirements.txt
 └── README.md
-
+```
 
 ---
 
-#  Exploratory Data Analysis (EDA)
+##  Exploratory Data Analysis (EDA)
 
 The following analysis was performed:
 
@@ -64,7 +66,7 @@ EDA helped understand feature relationships and class imbalance.
 
 ---
 
-#  Data Preprocessing
+##  Data Preprocessing
 
 - Missing values handled using mean imputation (BMI)
 - Categorical variables encoded using:
@@ -77,7 +79,7 @@ A consistent preprocessing pipeline (ColumnTransformer) was created and saved fo
 
 ---
 
-#  Handling Imbalanced Data
+##  Handling Imbalanced Data
 
 Since stroke cases were underrepresented:
 
@@ -89,7 +91,7 @@ Improving Recall was prioritized to reduce false negatives.
 
 ---
 
-#  Models Implemented
+##  Models Implemented
 
 - Logistic Regression
 - Random Forest Classifier
@@ -99,7 +101,7 @@ Random Forest provided the best performance after hyperparameter tuning.
 
 ---
 
-#  Model Evaluation Metrics
+##  Model Evaluation Metrics
 
 - Accuracy
 - Precision
@@ -111,17 +113,7 @@ Special emphasis was placed on **Recall**, as missing a stroke case can have ser
 
 ---
 
-#  Analysis of Feature Dominance
-
-Insight: The feature class_Economy accounts for the vast majority of the model's predictive power.
-
-The Challenge: Because the price gap between Economy and Business is so massive (e.g., $5,000 vs $50,000), the model prioritizes this distinction above all else.
-
-The Result: Factors like 'Time of Departure' or 'Source City' show lower importance globally, even though they significantly affect prices within the Economy class specifically.
-
----
-
-#  Hyperparameter Tuning
+##  Hyperparameter Tuning
 
 - GridSearchCV
 - RandomizedSearchCV
@@ -132,7 +124,7 @@ The Result: Factors like 'Time of Departure' or 'Source City' show lower importa
 
 ---
 
-#  Web Application (Streamlit)
+##  Web Application (Streamlit)
 
 A Streamlit web app was developed to allow real-time stroke prediction.
 
@@ -155,12 +147,12 @@ A Streamlit web app was developed to allow real-time stroke prediction.
 - Applies the same preprocessing used during training
 - Generates instant stroke prediction
 - Displays result clearly as:
-  -  No Stroke
-  -  High Stroke Risk
+  - No Stroke
+  - High Stroke Risk
 
 ---
 
-#  Model Serialization
+##  Model Serialization
 
 The trained model and preprocessing pipeline were saved using:
 
@@ -170,3 +162,38 @@ The trained model and preprocessing pipeline were saved using:
 
 ---
 
+##  How to Run the Project
+
+1. Clone the repository:
+   ```
+   git clone 
+   ```
+
+2. Navigate to the project folder:
+   ```
+   cd project
+   ```
+
+3. Install dependencies:
+   ```
+   pip install -r requirements.txt
+   ```
+
+4. Run the Streamlit app:
+   ```
+   streamlit run app/app.py
+   ```
+
+---
+
+##  Conclusion
+
+This project demonstrates an end-to-end machine learning workflow:
+
+- Data Analysis  
+- Feature Engineering  
+- Model Training  
+- Performance Optimization  
+- Deployment using Streamlit  
+
+The focus on Recall ensures that high-risk stroke cases are identified effectively.
