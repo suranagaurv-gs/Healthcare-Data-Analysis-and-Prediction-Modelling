@@ -143,7 +143,6 @@ A Streamlit web app was developed to allow real-time stroke prediction.
   - BMI
   - Smoking Status
 - Loads saved trained model (`model.pkl`)
-- Loads preprocessing pipeline (`preprocessor.pkl`)
 - Applies the same preprocessing used during training
 - Generates instant stroke prediction
 - Displays result clearly as:
