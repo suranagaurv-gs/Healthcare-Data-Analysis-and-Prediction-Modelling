@@ -29,19 +29,19 @@ The final output includes a trained machine learning model integrated into a Str
 project/
 │
 ├── notebooks/
-│ ├── Comprehensive EDA and Data Preparation for Healthcare Data (Stroke Prediction).ipynb
-│ └── Predictive Model Building and Evaluation(Stroke Prediction).ipynb
+│   ├── Comprehensive EDA and Data Preparation for Healthcare Data (Stroke Prediction).ipynb
+│   └── Predictive Model Building and Evaluation (Stroke Prediction).ipynb
 │
 ├── data/
-│ ├── original/
-│ └── processed/
+│   ├── original/
+│   └── processed/
 │
 ├── models/
-│ ├── model.pkl
-│ └── columns.pkl
+│   ├── model.pkl
+│   └── columns.pkl
 │
 ├── app/
-│ └── app.py
+│   └── app.py
 │
 ├── requirements.txt
 └── README.md
